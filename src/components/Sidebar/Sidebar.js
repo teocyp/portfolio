@@ -3,7 +3,11 @@ import './Sidebar.scss';
 import LogoTeo from '../../assets/images/logo_teo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+  faLinkedin,
+  faGithub,
+  faTelegram,
+} from '@fortawesome/free-brands-svg-icons';
 
 export default function Sidebar() {
   return (
@@ -40,6 +44,16 @@ export default function Sidebar() {
             href="https://www.linkedin.com/in/teocyp/"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://github.com/teocyp">
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://t.me/teocyp">
+            <FontAwesomeIcon icon={faTelegram} color="#4d4d4e" />
           </a>
         </li>
       </ul>
